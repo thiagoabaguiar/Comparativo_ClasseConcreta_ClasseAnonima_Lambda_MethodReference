@@ -51,8 +51,8 @@ public class MyApp {
         minhaLista.forEach(imprimir2);
         
         // C) Lambda
-        // Explicação: a expressão Lambda é uma simplificação da Classe Anônima,
-        // de tal forma que, apenas necessitamos passar o parâmetro para dentro
+        // Explicação: a expressão Lambda é, na verdade, uma função anônima.
+        // Dessa forma, apenas necessitamos passar o parâmetro para dentro
         // da função implementada logo de cara. A estrutura é: do lado esquerdo
         // da -> fica o parâmetro, e do lado direito da -> fica a implementação.
         minhaLista.forEach((String s) -> {
