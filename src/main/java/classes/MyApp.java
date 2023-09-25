@@ -52,12 +52,14 @@ public class MyApp {
         
         // C) Lambda
         // Explicação: a expressão Lambda é, na verdade, uma função anônima.
-        // Dessa forma, apenas necessitamos passar o parâmetro para dentro
+        // Dessa forma, apenas necessitamos passar o(s) parâmetro(s) para dentro
         // da função implementada logo de cara. A estrutura é: do lado esquerdo
-        // da -> fica o parâmetro, e do lado direito da -> fica a implementação.
+        // da -> fica(m) o(s) parâmetro(s), e do lado direito da -> fica a implementação.
         minhaLista.forEach((String s) -> {
             System.out.println(s);
         });
+        // OU (quando há apenas UM parâmetro e UMA linha de implementação)
+        minhaLista.forEach(s -> System.out.println(s));        
         
         // D) Method Reference
         // Explicação: o Method Reference usa o :: para invocar um método dentro
@@ -77,7 +79,8 @@ public class MyApp {
     // economizam na criação de classes externas; porém, a implementação, no caso
     // da Classe Anônima, ainda precisa ser feita no código-fonte principal.
     
-    // 3ª Lambda só pode ser usada com apenas um único parâmetro.
+    // 3ª Lambda só pode ser usada com apenas um único parâmetro, tendo assim
+    // duas formas de implementação, uma delas mais enxuta.
     
-    // 4ª a legibilidade do Method Reference é a melhor.
+    // 4ª a legibilidade do Lambda e do Method Reference são as melhores.
 }
